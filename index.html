@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>HTML Canvas</title>
 </head>
 <body>
-    
+    <div class="header">
+        <div class="title">
+            <h1>Rainbow Doodle</h1>
+        </div>
+        <div class="header-image">
+                <image id="image" src="http://www.stickpng.com/assets/images/588875eebc2fc2ef3a186056.png"></image>
+            </div>
+    </div>
+  
+        <canvas id="draw" width="1200" height="800"></canvas>
+        <image id="theimage"></image>
+   
+      
+                <div class="fixed-action-btn">
+                        <a class="btn-floating btn-large red">
+                          <i class="large material-icons">mode_edit</i>
+                        </a>
+                        <ul>
+                          <li><a class="btn-floating red tooltipped" data-position="left" data-tooltip="Delete Canvas" onclick="eraseDoodle()"><i class="material-icons">delete_forever</i></a></li>
+                          <li><a class="btn-floating green tooltipped" data-position="left" data-tooltip="Increase Line Size" onclick="increaseDoodle()"><i class="large material-icons">expand_less</i></a></li>
+                          <li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-tooltip="Decrease Line Size" onclick="decreaseDoodle()"><i class="tiny material-icons">expand_more</i></a></li>
+                          <li><a class="btn-floating blue tooltipped" data-position="left" data-tooltip="Download Image" onclick="to_image()"><i class="material-icons">file_download</i></a></li>
+                        </ul>
+                 </div>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="http://hongru.github.io/proj/canvas2image/canvas2image.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

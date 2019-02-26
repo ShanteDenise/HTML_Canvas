@@ -1,0 +1,28 @@
+@font-face {
+    font-family: rainbow;
+    src: url(fonts/Rainbow.ttf);
+  }
+
+.header{
+    display: flex;
+    height:100px;
+    width: 100%;
+    font-family: rainbow;
+    background-color: rgb(255, 251, 0);
+    align-content: center;
+    justify-content: center;
+    border-top: 2px solid rgb(255, 251, 0);
+    border-bottom: 2px solid rgb(246, 250, 5);
+}
+#image{
+    height: 150px;
+    width: 250px;
+}
+
+.container{
+    width: 100%!important;
+    background-color: aqua;
+}
+#draw{
+    width: 100%!important;
+}
