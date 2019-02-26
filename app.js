@@ -28,17 +28,6 @@ function draw(e) {
     ctx.stroke();
     [lastX, lastY] = [e.offsetX, e.offsetY];
     hue++;
-    // if(hue >= 360) {
-    //   hue = 0;
-    // }
-    // if(ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
-    //   direction = !direction;
-    // }
-    // if(direction) {
-    //   ctx.lineWidth++;
-    // } else {
-    //   ctx.lineWidth--;
-    // }
   }
 
 function increaseDoodle(){
@@ -94,3 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Tooltip.init(elems);
   });
 
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });

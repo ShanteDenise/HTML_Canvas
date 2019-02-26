@@ -11,30 +11,30 @@
     <title>HTML Canvas</title>
 </head>
 <body>
-    <div class="header">
+    <nav class="header blue" >
         <div class="title">
-            <h1>Rainbow Doodle</h1>
+            <h4>Rainbow Doodle</h4>
         </div>
-        <div class="header-image">
-                <image id="image" src="http://www.stickpng.com/assets/images/588875eebc2fc2ef3a186056.png"></image>
-            </div>
-    </div>
-  
-        <canvas id="draw" width="1200" height="800"></canvas>
-        <image id="theimage"></image>
-   
-      
+    </nav>
+
+        <canvas id="draw" width="1200" height="800"> </canvas>
                 <div class="fixed-action-btn">
-                        <a class="btn-floating btn-large red">
+                        <a class="btn-floating btn-large blue">
                           <i class="large material-icons">mode_edit</i>
                         </a>
                         <ul>
                           <li><a class="btn-floating red tooltipped" data-position="left" data-tooltip="Delete Canvas" onclick="eraseDoodle()"><i class="material-icons">delete_forever</i></a></li>
                           <li><a class="btn-floating green tooltipped" data-position="left" data-tooltip="Increase Line Size" onclick="increaseDoodle()"><i class="large material-icons">expand_less</i></a></li>
                           <li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-tooltip="Decrease Line Size" onclick="decreaseDoodle()"><i class="tiny material-icons">expand_more</i></a></li>
-                          <li><a class="btn-floating blue tooltipped" data-position="left" data-tooltip="Download Image" onclick="to_image()"><i class="material-icons">file_download</i></a></li>
+                          <li><a class="btn-floating purple tooltipped" data-position="left" data-tooltip="Download Image" onclick="to_image()"><i class="material-icons">file_download</i></a></li>
                         </ul>
                  </div>
+      
+        <image id="theimage"></image>
+        
+   
+      
+              
       
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="http://hongru.github.io/proj/canvas2image/canvas2image.js"></script>
